@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/start_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Start Job" />
+
+    <TextView
+        android:id="@+id/test_Result"
+        android:layout_below="@+id/start_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text Result"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/task1"
+        android:layout_below="@+id/test_Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task 1"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar1"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="374dp"
+        android:layout_height="111dp"
+        android:layout_below="@+id/task1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:indeterminate="false"
+        android:indeterminateTintMode="screen"
+        android:progressTint="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/task2"
+        android:layout_below="@+id/progress_bar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task 2"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar2"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="351dp"
+        android:layout_height="84dp"
+        android:layout_below="@+id/task2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:indeterminate="false"
+        android:indeterminateTintMode="screen"
+        android:progressTint="@color/colorPrimaryDark" />
+
+
+</RelativeLayout>
